@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+   
+    <button onclick="handleClick(this)" value="btn-1">btn-1</button>
+    <button onclick="handleClick(this)" value="btn-1">btn-2</button>
+    <button onclick="handleClick(this)" value="btn-1">btn-3</button>
+    <button onclick="handleClick(this)" value="btn-1">btn-4</button>
+    <button onclick="handleClick(this)" value="btn-1">btn-5</button>
+ 
+ 
+    <script>
+
+     var buttons = document.getElementsByTagName('button');
+     var countbtn = document.getElementsByTagName('button').length;
+     var arr =[];   
+     for(let i=0;i<countbtn;i++){
+        arr.push(buttons[i])
+     }
+        console.log(arr)
+    </script>
+       
+</body>
+</html>

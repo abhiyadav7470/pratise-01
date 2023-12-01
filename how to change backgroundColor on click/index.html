@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Button background prac</title>
+</head>
+<body>
+   <button onclick="handleClick(this)">btn-1</button>
+   <button onclick="handleClick(this)">btn-2</button>
+   <button onclick="handleClick(this)">btn-3</button>
+   <button onclick="handleClick(this)">btn-4</button>
+   <button onclick="handleClick(this)">btn-5</button>
+
+
+   <script>
+
+    const handleClick=(ele)=>{
+    var buttons = document.getElementsByTagName('button');
+    var countbtn = document.getElementsByTagName('button').length;
+
+    for(let i=0;i<countbtn;i++){
+        buttons[i].style.backgroundColor = 'white';
+    };
+
+    ele.style.backgroundColor = 'red';
+    }
+
+
+   </script>
+</body>
+</html>
